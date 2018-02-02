@@ -1,0 +1,34 @@
+.page_requests_info td,
+.page_requests_info th{
+	vertical-align: middle;
+}
+
+.page_requests_info .centralarea{
+	position:absolute;
+	top:55px;
+	left:10px;
+	right:10px;
+	bottom:10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.page_requests_info .navigationarea{
+	position:absolute;
+	top:5px;
+	left:10px;
+	right:10px;
+	height: 40px;
+	overflow: hidden;
+	border-bottom:1px solid #dadada;
+}
+
+
+.page_requests_info .steparea{
+	position: relative !important;
+	top:10px;
+	left:10px;
+	right:10px;
+	height: auto;
+	padding: 0px;
+}

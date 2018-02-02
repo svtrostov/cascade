@@ -1,0 +1,239 @@
+/*--------------------------------------------------------------------
+ * .org_chart
+ --------------------------------------------------------------------*/
+.org_chart{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.org_chart ul{
+	display:block;
+	width:auto;
+	height:auto;
+	padding-top: 20px; 
+	position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	white-space:nowrap;
+}
+
+.org_chart li {
+	display:inline-block;
+	//display:block;
+	//float: left; 
+	top:0;
+	vertical-align:top;
+	text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	white-space:nowrap;
+	
+}
+
+
+/*We will use ::before and ::after to draw the connectors*/
+.org_chart li::before, .org_chart li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.org_chart li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.org_chart li:only-child::after, .org_chart li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.org_chart li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.org_chart li:first-child::before, .org_chart li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.org_chart li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.org_chart li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.org_chart ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.org_chart li a{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 12px;
+	line-height: 15px;
+	display: inline-block;
+	width:160px;
+	height: 60px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	white-space:normal !important;
+	vertical-align: middle;
+}
+
+
+/*Заголовок для Root элемента с названием организации*/
+.org_chart li > a.header{
+	font-weight: bold;
+	font-size: 14px;
+	width:300px;
+	color: #505b6b;
+	height: auto;
+	padding: 20px 10px;
+}
+
+/*Выделенная нода*/
+.org_chart li > a.selected{
+	font-weight: bold;
+	color: #505b6b;
+	background: #f0e463;
+	border: 1px solid #505b6b;
+}
+
+
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.org_chart li a:hover, .org_chart li a:hover+ul li a {
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.org_chart li a:hover+ul li::after, 
+.org_chart li a:hover+ul li::before, 
+.org_chart li a:hover+ul::before, 
+.org_chart li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+
+.org_chart li a.selected:hover,
+.org_chart li a:hover+ul li a.selected{
+	background: #f5f7c9; 
+}
+
+
+
+/*--------------------------------------------------------------------
+ * .org_tree
+ --------------------------------------------------------------------*/
+
+.org_tree{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: bold;
+	position: relative;
+}
+
+.org_tree ul,
+.org_tree li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.org_tree ul{
+	display:block;
+	position: relative;
+}
+
+.org_tree li{
+	display:block;
+	position: relative;
+}
+
+.org_tree li::before{
+	content: '';
+	position: absolute; top: 0; bottom:0; left: -20px;
+	border-left: 1px dotted #999;
+	width: 16px;
+}
+.org_tree li:last-child::before{
+	content: '';
+	position: absolute; top: 0; left: -20px;
+	border-left: 1px dotted #999;
+	width: 16px; height:13px;
+}
+
+.org_tree a::before{
+	content: '';
+	position: absolute; top: 13px; left: -20px;
+	border-top: 1px dotted #999;
+	width: 16px; height: 20px;
+}
+
+.org_tree a{
+	display: block; 
+	position: relative;
+	color: #2b323b;
+	text-decoration: none;
+}
+
+.org_tree a.dimness{
+	color: #c5d0e0;
+}
+
+.org_tree a + ul{
+	margin: 0 0 0 20px;
+	font-size: 95%;
+	font-weight: 90%;
+	opacity: 0.95;
+}
+
+.org_tree li > a.selected{
+	font-weight: bold;
+	color: #000;
+	background: #f0e463;
+	border: 1px solid #505b6b;
+}
+
+.org_tree a{
+	display: inline-block;
+	height: auto;
+	vertical-align: middle;
+}
+
+.org_tree li a:hover{
+	background: #c8e4f8; 
+	color: #000;
+}
+
+.org_tree li a.selected:hover,
+.org_tree li a:hover+ul li a.selected{
+	background: #f5f7c9; 
+}

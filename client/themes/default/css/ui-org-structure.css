@@ -1,0 +1,242 @@
+.page_org_structure #org_chart_tool_area{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 41px;
+	overflow: hidden;
+	border:1px solid #dadada;
+}
+
+.page_org_structure #org_chart_tool_area > div.left{
+	float: left;
+	margin-top:5px;
+	margin-left:5px;
+	padding-left:5px;
+	border-left:3px double #dadada;
+	height:31px;
+}
+.page_org_structure #org_chart_tool_area > div.right{
+	float: right;
+	margin-top:5px;
+	margin-right:5px;
+	padding-left:5px;
+	border-left:3px double #dadada;
+	height:31px;
+}
+.page_org_structure #org_chart_tool_area > div.left:first-child{
+	border-left:3px double #FFFFFF;
+	padding-left:0px;
+}
+
+.page_org_structure #org_chart_tool_area .ileft{
+	padding-left:24px;
+}
+.page_org_structure #org_chart_tool_area .icon_add{
+	background:url(../images/icons/icon_add_24.png) left top no-repeat;
+}
+.page_org_structure #org_chart_tool_area .icon_edit{
+	background:url(../images/icons/icon_edit_24.png) left top no-repeat;
+}
+.page_org_structure #org_chart_tool_area .icon_delete{
+	background:url(../images/icons/icon_cut_24.png) left top no-repeat;
+}
+.page_org_structure #org_chart_tool_area .icon_save{
+	background:url(../images/icons/icon_save_24.png) left top no-repeat;
+}
+.page_org_structure #org_chart_tool_area .icon_reload{
+	background:url(../images/icons/icon_refresh_24.png) left top no-repeat;
+}
+.page_org_structure #org_chart_tool_area .icon_info{
+	background:url(../images/icons/icon_info_24.png) left top no-repeat;
+}
+
+
+
+.page_org_structure #org_chart_area{
+	position: absolute;
+	top: 42px;
+	left: 0px;
+	right: 0px;
+	bottom:0px;
+	overflow: auto;
+}
+
+.page_org_structure #org_chart_tree{
+	cursor: move;
+	white-space:nowrap;
+	margin:0 auto;
+	float: left;
+}
+
+.page_org_structure #org_chart_tree.org_chart > ul > li{
+	background:white;
+	border:1px solid #dadada;
+	padding:10px;
+}
+
+
+/*Слайдер масштаба*/
+.page_org_structure #zoom_slider_wrapper{
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	width: 26px;
+	height: 160px;
+	overflow: hidden;
+	opacity:0.6;
+	text-align: center;
+}
+.page_org_structure #zoom_slider_title{
+	width:100%;
+	clear:both;
+	text-align: center;
+	font-weight: normal;
+	font-size:10px;
+	margin-bottom:5px;
+}
+.page_org_structure #zoom_slider_plus{
+	margin-left:5px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.page_org_structure #zoom_slider_minus{
+	margin-left:5px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.page_org_structure #zoom_slider{
+	margin-left:5px;
+	width: 16px;
+	height: 100px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	opacity:0.6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.page_org_structure #zoom_slider_knob{
+	background: #8E9BAC;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.page_org_structure #zoom_slider_wrapper:hover{
+	opacity:1;
+}
+
+.page_org_structure #org_post_select_area{
+	position: absolute;
+	display: block;
+	top: 64px;
+	left: 0px;
+	right: 0px;
+	bottom:0px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.page_org_structure #org_post_select{
+	width:100%;
+	height:100%;
+}
+
+
+
+.page_org_structure #post_action_title{
+	height: 32px;
+	line-height: 26px;
+	overflow: hidden;
+	font-weight: bold;
+	border-bottom:1px solid #ccc;
+}
+
+/*Область фильтра объектов в таблице объектов*/
+.page_org_structure .posts_filter{
+	height: 32px;
+	overflow: hidden;
+	min-width: 150px;
+}
+
+.page_org_structure .posts_filter .flabel{
+	float: left;
+	margin: 0px 5px;
+	width: 50px;
+	overflow: hidden;
+	line-height: 30px;
+}
+
+
+.page_org_structure .posts_filter .fbutton{
+	float: right;
+	margin: 0px 3px;
+	width: 16px;
+	height: 30px;
+	overflow: hidden;
+	background: transparent url(../images/filter_clear.png) left center no-repeat;
+	cursor: pointer;
+}
+
+
+.page_org_structure .posts_filter .finput{
+	margin-left: 60px;
+	margin-right: 35px;
+}
+
+.page_org_structure .posts_filter .finput input{
+	width:100%;
+}
+
+.page_org_structure #orgstructure_post_window{
+	z-index:3;
+}
+
+
+.page_org_structure .radioarea{
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	background: #fff;
+	min-height: 50px;
+	height: auto;
+	margin: 10px auto;
+	padding: 5px;
+	cursor: pointer;
+	opacity:0.7;
+}
+
+
+.page_org_structure .radioarea:hover{
+	-webkit-box-shadow:1px 2px 2px #ccc;
+	-moz-box-shadow:1px 2px 2px #ccc;
+	box-shadow:1px 2px 2px #ccc;
+	opacity:1;
+}
+
+
+
+.page_org_structure .radioarea > .line{
+	margin-left: 10px;
+	display: block;
+	line-height: 20px;
+	color: #2b323b;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.page_org_structure .radioarea > .line span{
+	display: inline-block;
+	width: 150px;
+	margin-right: 10px;
+	font-weight: normal;
+	color: #505b6b;
+}

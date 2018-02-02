@@ -1,0 +1,95 @@
+.page_assistants #assistants_selector_wrapper,
+.page_assistants #assistants_wrapper{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.page_assistants td,
+.page_assistants th{
+	vertical-align:middle;
+}
+
+.page_assistants .steparea{
+	height: auto;
+	padding: 10px;
+	position: relative !important;
+}
+
+.page_assistants .steparea h1{
+	font-size:16px;
+}
+
+.page_assistants .steparea h2{
+	margin: 10px 0px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #505b6b;
+}
+
+
+/*Панель инструментов в шаге*/
+.page_assistants .toolarea{
+	float: left;
+	width: 120px;
+}
+
+
+.page_assistants .toolarea > .toolbutton{
+	margin-bottom: 20px;
+	padding:0px;
+	height: 90px;
+	width: 100px;
+	display:inline-block;
+	vertical-align:bottom;
+	text-align:center;
+	text-decoration: none;
+	color:#505b6b;
+	opacity:0.7;
+	cursor: pointer;
+	border-left:3px double #fff;
+	border-right:3px double #fff;
+}
+
+
+.page_assistants .toolarea > .toolbutton:hover{
+	color:#222;
+	opacity:1;
+	border-left:3px double #eaeaea;
+	border-right:3px double #eaeaea;
+}
+
+.page_assistants .toolarea > .toolbutton.active{
+	color:#222;
+	opacity:1;
+	border-left:3px double #ccc;
+	border-right:3px double #ccc;
+}
+
+
+.page_assistants .toolarea > .toolbutton > div{
+	margin-top:70px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+
+
+.page_assistants .toolarea > div.toolbutton.assistants{
+	background:url(../images/buttons/assistants.png) center top no-repeat;
+}
+
+
+.page_assistants .toolarea > div.toolbutton.delegates{
+	background:url(../images/buttons/assistant.png) center top no-repeat;
+}
+
+.page_assistants .toolarea > div.toolbutton.about{
+	background:url(../images/buttons/about.png) center top no-repeat;
+}
+
+
+/*Основная область*/
+.page_assistants .centralarea{
+	margin-left:140px;
+
+}

@@ -1,0 +1,32 @@
+.page_manager_menu #designmenu_area{
+	position: absolute;
+	left:10px;
+	top:10px;
+	bottom: 10px;
+	width: 300px;
+	border: 1px solid #ccc;
+	overflow: auto;
+}
+
+.page_manager_menu #designmenu_info{
+	position: absolute;
+	left:320px;
+	top:10px;
+	bottom: 10px;
+	right: 10px;
+	border: 1px solid #ccc;
+	overflow: auto;
+	padding: 5px;
+}
+
+.page_manager_menu #designmenu_splitter{
+	position: absolute;
+	left:313px;
+	width: 4px;
+	top:10px;
+	bottom: 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #e3e3e3 url(../images/handle_h.gif) center center no-repeat;
+	cursor: col-resize;
+}

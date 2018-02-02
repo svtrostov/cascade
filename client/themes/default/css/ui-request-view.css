@@ -1,0 +1,12 @@
+/*Основная область*/
+.page_request_view #request_area{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+.page_request_view td,
+.page_request_view th{
+	vertical-align:middle;
+}
+

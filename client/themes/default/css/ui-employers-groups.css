@@ -1,0 +1,194 @@
+/*Область списка*/
+.page_employers_groups #groups_area{
+	position: absolute;
+	left:10px;
+	top:55px;
+	bottom: 10px;
+	width: 400px;
+	border: 1px solid #ccc;
+}
+
+/*Область информации*/
+.page_employers_groups #groups_info{
+	position: absolute;
+	left:420px;
+	top:55px;
+	bottom: 10px;
+	right: 10px;
+	border: 1px solid #ccc;
+	overflow: auto;
+	padding: 5px;
+}
+
+/*Разделитель*/
+.page_employers_groups #groups_splitter{
+	position: absolute;
+	left:413px;
+	width: 4px;
+	top:55px;
+	bottom: 10px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #e3e3e3 url(../images/handle_h.gif) center center no-repeat;
+	cursor: col-resize;
+}
+
+/*Область фильтра объектов в таблице объектов*/
+.page_employers_groups .groups_table_filter{
+	height: 32px;
+	overflow: hidden;
+	min-width: 150px;
+}
+
+.page_employers_groups .groups_table_filter .flabel{
+	float: left;
+	margin: 0px 5px;
+	width: 50px;
+	overflow: hidden;
+	line-height: 30px;
+}
+
+
+.page_employers_groups .groups_table_filter .fbutton{
+	float: right;
+	margin: 0px 3px;
+	width: 16px;
+	height: 30px;
+	overflow: hidden;
+	background: transparent url(../images/filter.png) left center no-repeat;
+	cursor: pointer;
+}
+
+
+.page_employers_groups .groups_table_filter .finput{
+	margin-left: 60px;
+	margin-right: 35px;
+	margin-top: 1px;
+}
+
+.page_employers_groups .groups_table_filter .finput input{
+	width:100%;
+}
+
+.page_employers_groups .groups_table_filter .fselect{
+	margin-left: 60px;
+	margin-right: 5px;
+}
+
+.page_employers_groups .groups_table_filter .fselect select{
+	width:100%;
+}
+
+
+
+/*Область вывода таблицы*/
+.page_employers_groups #included_employers_area_table_wrapper,
+.page_employers_groups #groups_table_area_wrapper{
+	overflow: auto;
+	position: absolute;
+	left:0px;
+	top:32px;
+	bottom: 0px;
+	right: 0px;
+}
+.page_employers_groups .groups_table_area{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+
+
+
+.page_employers_groups #containers_groups_none{
+	text-align: center;
+}
+
+
+.page_employers_groups #selected_group_area{
+	position: absolute;
+	left:10px;
+	top:55px;
+	bottom: 10px;
+	width: 400px;
+	border: 1px solid #ccc;
+}
+
+
+.page_employers_groups #all_employers_area_table_wrapper{
+	overflow: auto;
+	position: absolute;
+	left:0px;
+	top:32px;
+	bottom: 0px;
+	right: 0px;
+}
+.page_employers_groups #all_employers_area{
+	position: absolute;
+	left:506px;
+	top:55px;
+	bottom: 10px;
+	right: 10px;
+	border: 1px solid #ccc;
+}
+
+
+/*Панель инструментов в шаге*/
+.page_employers_groups #group_employers_splitter{
+	text-align:center;
+	vertical-align:middle;
+	position: absolute;
+	left:413px;
+	top:55px;
+	bottom: 10px;
+	width: 90px;
+	overflow: hidden;
+}
+
+.page_employers_groups #group_employers_splitter_handle{
+	background: url(../images/buttons/resize_h.png) center top no-repeat;
+	width:100%;
+	height:64px;
+	margin-bottom:100px;
+	opacity:0.5;
+	cursor: col-resize;
+}
+.page_employers_groups #group_employers_splitter_handle:hover{
+	opacity:1;
+}
+
+
+.page_employers_groups #group_employers_splitter > .toolbutton{
+	margin-bottom: 20px;
+	padding:0px;
+	height: 90px;
+	display:inline-block;
+	vertical-align:bottom;
+	text-align:center;
+	text-decoration: none;
+	color:#505b6b;
+	opacity:0.7;
+	cursor: pointer;
+	border-left:3px double #fff;
+	border-right:3px double #fff;
+}
+
+
+.page_employers_groups #group_employers_splitter > .toolbutton:hover{
+	color:#222;
+	opacity:1;
+}
+
+.page_employers_groups #group_employers_splitter > .toolbutton > div{
+	margin-top:70px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+
+
+.page_employers_groups #group_employers_splitter > div.toolbutton.include{
+	background:url(../images/buttons/button_back.png) center top no-repeat;
+}
+.page_employers_groups #group_employers_splitter > div.toolbutton.exclude{
+	background:url(../images/buttons/button_next.png) center top no-repeat;
+}

@@ -1,0 +1,98 @@
+.page_request_history #assistants_selector_wrapper,
+.page_request_history #assistants_wrapper{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.page_request_history td,
+.page_request_history th{
+	vertical-align:middle;
+}
+
+.page_request_history .steparea{
+	height: auto;
+	padding: 10px;
+	position: relative !important;
+}
+
+.page_request_history .steparea h1{
+	font-size:16px;
+}
+
+.page_request_history .steparea h2{
+	margin: 10px 0px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #505b6b;
+}
+
+
+/*Панель инструментов в шаге*/
+.page_request_history .toolarea{
+	float: left;
+	width: 120px;
+}
+
+
+.page_request_history .toolarea > .toolbutton{
+	margin-bottom: 20px;
+	padding:0px;
+	height: 90px;
+	width: 100px;
+	display:inline-block;
+	vertical-align:bottom;
+	text-align:center;
+	text-decoration: none;
+	color:#505b6b;
+	opacity:0.7;
+	cursor: pointer;
+	border-left:3px double #fff;
+	border-right:3px double #fff;
+}
+
+
+.page_request_history .toolarea > .toolbutton:hover{
+	color:#222;
+	opacity:1;
+	border-left:3px double #eaeaea;
+	border-right:3px double #eaeaea;
+}
+
+.page_request_history .toolarea > .toolbutton.active{
+	color:#222;
+	opacity:1;
+	border-left:3px double #ccc;
+	border-right:3px double #ccc;
+}
+
+
+.page_request_history .toolarea > .toolbutton > div{
+	margin-top:70px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+
+
+.page_request_history .toolarea > div.toolbutton.request_active{
+	background:url(../images/buttons/route_1.png) center top no-repeat;
+}
+.page_request_history .toolarea > div.toolbutton.request_complete{
+	background:url(../images/buttons/route_100.png) center top no-repeat;
+}
+.page_request_history .toolarea > div.toolbutton.request_hold{
+	background:url(../images/buttons/route_2.png) center top no-repeat;
+}
+.page_request_history .toolarea > div.toolbutton.request_cancel{
+	background:url(../images/buttons/route_0.png) center top no-repeat;
+}
+.page_request_history .toolarea > div.toolbutton.request_view{
+	background:url(../images/buttons/read.png) center top no-repeat;
+}
+
+
+/*Основная область*/
+.page_request_history .centralarea{
+	margin-left:140px;
+
+}

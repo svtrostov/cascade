@@ -1,0 +1,403 @@
+.page_routes_info td,
+.page_routes_info th{
+	vertical-align: middle;
+}
+
+.page_routes_info .table_area{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.page_routes_info .splitline{
+	margin-top:20px;
+	margin-bottom:10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.page_routes_info .tab_content_wrapper{
+	position: absolute;
+	left:10px;
+	top:55px;
+	bottom:10px;
+	right:5px;
+	padding-right:5px;
+	overflow-y:auto;
+}
+
+
+/*Область списка*/
+.page_routes_info .sleft_panel{
+	position: absolute;
+	left:0px;
+	top:0px;
+	bottom: 0px;
+	width: 310px;
+	border: 1px solid #ccc;
+	overflow: auto;
+}
+
+
+.page_routes_info .sright_panel{
+	position: absolute;
+	left:320px;
+	top:0px;
+	bottom: 0px;
+	right: 0px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+
+/*Панель инструментов в шаге*/
+.page_routes_info .small_splitter{
+	position: absolute;
+	left:313px;
+	width: 4px;
+	top:0px;
+	bottom: 0px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #e3e3e3 url(../images/handle_h.gif) center center no-repeat;
+	cursor: col-resize;
+}
+
+.page_routes_info #post_selector_companies_select{
+	width:100%;
+	height:100%;
+	border:0px;
+}
+.page_routes_info #post_selector_org_structure_area_wrapper{
+	overflow: auto;
+	position: absolute;
+	left:10px;
+	top:40px;
+	bottom: 10px;
+	right: 10px;
+}
+.page_routes_info #post_selector_org_structure{
+	margin:5px;
+}
+
+
+.page_routes_info .table_filter{
+	height: 32px;
+	overflow: hidden;
+	min-width: 150px;
+}
+
+.page_routes_info .table_filter .flabel{
+	float: left;
+	margin: 0px 5px;
+	width: 50px;
+	overflow: hidden;
+	line-height: 30px;
+}
+
+
+.page_routes_info .table_filter .fbutton{
+	float: right;
+	margin: 0px 3px;
+	width: 16px;
+	height: 30px;
+	overflow: hidden;
+	background: transparent url(../images/filter.png) left center no-repeat;
+	cursor: pointer;
+}
+
+
+.page_routes_info .table_filter .finput{
+	margin-left: 60px;
+	margin-right: 35px;
+	margin-top: 1px;
+}
+
+.page_routes_info .table_filter .finput input{
+	width:100%;
+}
+
+.page_routes_info .table_filter .fselect{
+	margin-left: 60px;
+	margin-right: 5px;
+}
+
+.page_routes_info .table_filter .fselect select{
+	width:100%;
+}
+
+
+
+.page_routes_info #sections_table_area_wrapper,
+.page_routes_info #objects_table_area_wrapper{
+	position: absolute;
+	top: 44px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	overflow: auto;
+}
+
+.page_routes_info .tool_area{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 41px;
+	overflow: hidden;
+	border-bottom:1px solid #dadada;
+	white-space: nowrap;
+}
+
+.page_routes_info .tool_area > div.left{
+	display:inline-block;
+	margin-top:5px;
+	padding-left:5px;
+	border-left:3px double #dadada;
+	height:31px;
+	white-space: nowrap;
+	clear: none;
+}
+.page_routes_info .tool_area > div.right{
+	float: right;
+	margin-top:5px;
+	margin-right:5px;
+	padding-left:5px;
+	border-left:3px double #dadada;
+	height:31px;
+	white-space: nowrap;
+}
+.page_routes_info .tool_area > div.left:first-child{
+	border-left:3px double #FFFFFF;
+	padding-left:0px;
+}
+
+.page_routes_info .tool_area .ileft{
+	padding-left:24px;
+}
+.page_routes_info .tool_area .icon_add{
+	background:url(../images/icons/icon_add_24.png) left top no-repeat;
+}
+.page_routes_info .tool_area .icon_edit{
+	background:url(../images/icons/icon_edit_24.png) left top no-repeat;
+}
+.page_routes_info .tool_area .icon_delete{
+	background:url(../images/icons/icon_cut_24.png) left top no-repeat;
+}
+.page_routes_info .tool_area .icon_copy{
+	background:url(../images/icons/icon_copy_24.png) left top no-repeat;
+}
+.page_routes_info .tool_area .icon_reload{
+	background:url(../images/icons/icon_refresh_24.png) left top no-repeat;
+}
+
+.page_routes_info #table_params_area{
+	position: absolute;
+	left:0px;
+	top:44px;
+	right:0px;
+	bottom:0px;
+	overflow: auto;
+}
+
+
+
+.page_routes_info .workflow_area{
+	position: absolute;
+	left:5px;
+	top:50px;
+	right:5px;
+	bottom:5px;
+	overflow: hidden;
+}
+
+
+/*--------------------------------------------
+ *  workflow
+ *------------------------------------------*/
+._jsPlumb_endpoint { cursor:pointer; z-index:25; }
+
+.page_routes_info .workflow{
+	position: absolute;
+	left:0px;
+	top:44px;
+	right:0px;
+	bottom:0px;
+	border:1px solid #cccccc; 
+	overflow: scroll;
+}
+
+
+.page_routes_info .workflow > .unit{ 
+	border:2px solid #8E9BAC; 
+	width:280px;
+	height:130px; 
+	z-index:20; 
+	position:absolute; 
+	color:black;
+	font-size:12px;
+	text-align:center;
+	background-color:#FFF;
+	cursor:pointer;
+	padding-top:10px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	vertical-align: middle;
+}
+
+
+.page_routes_info .workflow > .unit.beblock{ 
+	width:280px;
+	height:60px; 
+	position:absolute; 
+	font-size:14px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+.page_routes_info .workflow > .unit.beblock.start{
+	color:black;
+}
+
+.page_routes_info .workflow > .unit.beblock.success{
+	color:green;
+}
+
+.page_routes_info .workflow > .unit.beblock.fails{
+	color:red;
+}
+
+.page_routes_info .workflow > .unit.selected{
+	border:2px solid #ec9f2e; 
+	background-color:#f6f7e4;
+}
+
+
+.page_routes_info .workflow > .unit .unit_tool{
+	margin:0px;
+	position:absolute;
+	left:2px;
+	right:2px;
+	bottom:2px;
+	height: 16px;
+	line-height: 16px;
+	text-align: right;
+}
+
+.page_routes_info .workflow > .unit.beblock .unit_tool{
+	right:12px;
+}
+
+.page_routes_info .workflow > .unit .unit_tool img{
+	margin-left:3px;
+	border:1px solid #eee; 
+}
+
+.page_routes_info .workflow > .unit .unit_tool img:hover{
+	border:1px solid #aaa; 
+}
+.page_routes_info .workflow > .unit:hover {
+
+	box-shadow: 2px 2px 19px #444;
+   -o-box-shadow: 2px 2px 19px #444;
+   -webkit-box-shadow: 2px 2px 19px #444;
+   -moz-box-shadow: 2px 2px 19px #444;
+    opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+
+/*--------------------------------------------
+ *  tool_area
+ *------------------------------------------*/
+
+.page_routes_info .tool_area{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 41px;
+	overflow: hidden;
+	border-bottom:1px solid #dadada;
+	white-space: nowrap;
+}
+
+.page_routes_info .tool_area > div.left{
+	display:inline-block;
+	margin-top:5px;
+	padding-left:5px;
+	border-left:3px double #dadada;
+	height:31px;
+	white-space: nowrap;
+	clear: none;
+}
+.page_routes_info .tool_area > div.right{
+	float: right;
+	margin-top:5px;
+	margin-right:5px;
+	padding-left:5px;
+	border-left:3px double #dadada;
+	height:31px;
+	white-space: nowrap;
+}
+.page_routes_info .tool_area > div.left:first-child{
+	border-left:3px double #FFFFFF;
+	padding-left:0px;
+}
+
+.page_routes_info .tool_area .ileft{
+	padding-left:24px;
+}
+.page_routes_info .tool_area .icon_add{
+	background:url(../images/icons/icon_add_24.png) left top no-repeat;
+}
+.page_routes_info .tool_area .icon_edit{
+	background:url(../images/icons/icon_edit_24.png) left top no-repeat;
+}
+.page_routes_info .tool_area .icon_new{
+	background:url(../images/icons/icon_new_24.png) left top no-repeat;
+}
+.page_routes_info .tool_area .icon_save{
+	background:url(../images/icons/icon_save_24.png) left top no-repeat;
+}
+.page_routes_info .tool_area .icon_refresh{
+	background:url(../images/icons/icon_refresh_24.png) left top no-repeat;
+}
+
+
+/*--------------------------------------------
+ *  unit selector
+ *------------------------------------------*/
+
+.page_routes_info #unit_selector_wrapper{
+	overflow-y:auto;
+}
+
+
+.page_routes_info .type_sub{
+	margin-left: 160px;
+	max-width: 800px;
+}
+
+.page_routes_info #post_selector,
+.page_routes_info #employer_selector{
+	z-index:2;
+}
+
+/*--------------------------------------------
+ *  param selector
+ *------------------------------------------*/
+.page_routes_info #param_selector_wrapper,
+.page_routes_info #employer_selector_wrapper{
+	overflow: auto;
+}
+
+.page_routes_info .param_desc{
+	margin-left: 40px;
+	max-width: 700px;
+}
+.page_routes_info .param_desc li{
+	margin-left:20px;
+}

@@ -1,0 +1,9 @@
+.page_curator_employer #anket_area{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.page_curator_employer td,
+.page_curator_employer th{
+	vertical-align:middle;
+}

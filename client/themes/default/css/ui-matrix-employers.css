@@ -1,0 +1,164 @@
+.page_matrix_employers td,
+.page_matrix_employers th{
+	vertical-align: middle;
+}
+
+.page_matrix_employers .navigationarea{
+	margin:0px 10px;
+}
+
+.page_matrix_employers .centralarea{
+	position:absolute !important;
+	top:40px;
+	left:10px;
+	right:10px;
+	bottom:10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.page_matrix_employers .table_area{
+	//border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+/*Область списка*/
+.page_matrix_employers .sleft_panel{
+	position: absolute;
+	left:0px;
+	top:0px;
+	bottom: 0px;
+	width: 330px;
+	border: 1px solid #ccc;
+	overflow: auto;
+}
+
+
+.page_matrix_employers .sright_panel{
+	position: absolute;
+	left:340px;
+	top:0px;
+	bottom: 0px;
+	right: 0px;
+	border: 1px solid #ccc;
+	overflow: auto;
+	padding: 0px;
+}
+
+
+.page_matrix_employers .small_splitter{
+	position: absolute;
+	left:333px;
+	width: 4px;
+	top:0px;
+	bottom: 0px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #e3e3e3 url(../images/handle_h.gif) center center no-repeat;
+	cursor: col-resize;
+}
+
+
+/*Область фильтра объектов в таблице объектов*/
+.page_matrix_employers .table_filter{
+	height: 32px;
+	overflow: hidden;
+	min-width: 150px;
+}
+
+.page_matrix_employers .table_filter .flabel{
+	float: left;
+	margin: 0px 5px;
+	width: 50px;
+	overflow: hidden;
+	line-height: 30px;
+}
+
+
+.page_matrix_employers .table_filter .fbutton{
+	float: right;
+	margin: 0px 3px;
+	width: 16px;
+	height: 30px;
+	overflow: hidden;
+	background: transparent url(../images/filter.png) left center no-repeat;
+	cursor: pointer;
+}
+
+.page_matrix_employers .table_filter .finput{
+	margin-left: 60px;
+	margin-right: 35px;
+	margin-top: 1px;
+}
+
+.page_matrix_employers .table_filter .finput input{
+	width:100%;
+}
+
+.page_matrix_employers .table_filter .fselect{
+	margin-left: 60px;
+	margin-right: 5px;
+}
+
+.page_matrix_employers .table_filter .fselect select{
+	width:100%;
+}
+
+
+.page_matrix_employers #employers_none,
+.page_matrix_employers #ir_list_none{
+	margin-top:20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.page_matrix_employers #ir_list_wrapper{
+	position: absolute;
+	top: 44px;
+	left: 5px;
+	right: 0px;
+	bottom: 5px;
+	overflow: auto;
+}
+
+
+.page_matrix_employers .tool_area{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 41px;
+	overflow: hidden;
+	border-bottom:1px solid #dadada;
+	white-space: nowrap;
+}
+
+.page_matrix_employers .tool_area > div.left{
+	display:inline-block;
+	margin-top:5px;
+	padding-left:5px;
+	border-left:3px double #dadada;
+	height:31px;
+	white-space: nowrap;
+	clear: none;
+}
+.page_matrix_employers .tool_area > div.right{
+	float: right;
+	margin-top:5px;
+	margin-right:5px;
+	padding-left:5px;
+	border-left:3px double #dadada;
+	height:31px;
+	white-space: nowrap;
+}
+.page_matrix_employers .tool_area > div.left:first-child{
+	border-left:3px double #FFFFFF;
+	padding-left:0px;
+}
+
+.page_matrix_employers .tool_area .ileft{
+	padding-left:24px;
+}
+.page_matrix_employers .tool_area .icon_lock{
+	background:url(../images/icons/icon_lock_24.png) left top no-repeat;
+}

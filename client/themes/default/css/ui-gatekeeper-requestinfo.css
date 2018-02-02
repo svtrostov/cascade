@@ -1,0 +1,21 @@
+/*Основная область в шаге*/
+.page_gatekeeper_request_info #request_area{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+.page_gatekeeper_request_info td,
+.page_gatekeeper_request_info th{
+	vertical-align:middle;
+}
+
+.page_gatekeeper_request_info .gk_buttonarea{
+	border-top:1px solid #505b6b;
+	height: 36px;
+	text-align: center;
+	vertical-align: center;
+	background:#fff;
+	margin:10px 0px;
+}
+

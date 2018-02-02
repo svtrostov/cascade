@@ -1,0 +1,176 @@
+.page_curator_request .steparea{
+	position: relative !important;
+	top:10px;
+	left:10px;
+	right:10px;
+	height: auto;
+	padding: 20px;
+}
+
+.page_curator_request .steparea h1{
+	font-size:16px;
+}
+
+
+.page_curator_request .radioarea{
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	background: #fff;
+	min-height: 120px;
+	height: auto;
+	margin: 10px auto;
+	padding: 5px;
+	cursor: pointer;
+	opacity:0.7;
+}
+
+
+.page_curator_request .radioarea.selected{
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #ccc;
+	background: #F7F6ED url(../images/check_64.png) right center no-repeat;
+	opacity:1;
+}
+
+.page_curator_request .radioarea:hover{
+	-webkit-box-shadow:1px 2px 2px #ccc;
+	-moz-box-shadow:1px 2px 2px #ccc;
+	box-shadow:1px 2px 2px #ccc;
+	opacity:1;
+}
+
+
+
+.page_curator_request .radioarea > .line{
+	margin-left: 10px;
+	display: block;
+	line-height: 24px;
+	color: #2b323b;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+.page_curator_request .radioarea > .line span{
+	display: inline-block;
+	width: 100px;
+	margin-right: 10px;
+	font-weight: normal;
+	color: #505b6b;
+}
+
+
+/*Панель инструментов в шаге*/
+.page_curator_request .steparea > .toolarea{
+	float: left;
+	width: 120px;
+}
+
+
+.page_curator_request .steparea > .toolarea > .toolbutton{
+	margin-bottom: 20px;
+	padding:0px;
+	height: 90px;
+	width: 100px;
+	display:inline-block;
+	vertical-align:bottom;
+	text-align:center;
+	text-decoration: none;
+	color:#505b6b;
+	opacity:0.7;
+	cursor: pointer;
+}
+
+
+.page_curator_request .steparea > .toolarea > .toolbutton:hover{
+	color:#222;
+	opacity:1;
+}
+
+
+.page_curator_request .steparea > .toolarea > .toolbutton > div{
+	margin-top:70px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+
+
+.page_curator_request .steparea > .toolarea > div.toolbutton.add{
+	background:url(../images/buttons/button_plus.png) center top no-repeat;
+}
+
+
+.page_curator_request .steparea > .toolarea > div.toolbutton.trash{
+	background:url(../images/buttons/button_trash.png) center top no-repeat;
+}
+
+
+/*Основная область в шаге*/
+.page_curator_request .steparea > .centralarea{
+	margin-left:140px;
+	
+}
+
+
+.page_curator_request #ir_none{
+}
+
+.page_curator_request .steparea h2{
+	margin: 10px 0px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #505b6b;
+}
+
+
+.page_curator_request #ir_area{
+	
+}
+
+
+.page_curator_request #ir_selector{
+	z-index:2;
+}
+
+.page_curator_request #ir_selector_wrapper,
+.page_curator_request #stepmaster_area{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.page_curator_request #ir_selector_none,
+.page_curator_request #ir_selector_table{
+	margin:10px 10px 10px 0px;
+}
+
+/*Панель инструментов на странице выбора объектов доступа*/
+.page_curator_request #ir_selector_toolbar{
+	text-align: right;
+	height: 20px;
+	line-height: 20px;
+}
+.page_curator_request #ir_selector_toolbar a{
+	margin-right: 10px;
+}
+ 
+.page_curator_request #ir_request_complete{
+	padding-top: 40px;
+	z-index:2;
+}
+
+
+.page_curator_request #ir_selector_select{
+	position: relative;
+	height: 70px;
+	width: 400px;
+	padding-left: 70px;
+	margin-top: 20px;
+	margin-left: 250px;
+	vertical-align: middle;
+	background:url(../images/buttons/button_up.png) left top no-repeat;
+}

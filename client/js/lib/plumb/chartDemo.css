@@ -1,0 +1,86 @@
+.window { 
+	border:2px solid #bbb; 
+	opacity:0.6; 
+	filter:alpha(opacity=60); 
+	width:14em; height:5em; 
+	z-index:20; 
+	position:absolute; 
+	color:black;
+	font-family:helvetica, sans;
+	padding-top:0.9em; 
+	font-size:12px;
+	text-align:center;
+	background-color:#eeeeef;
+}
+
+.window.selected{
+	border:2px solid #ec9f2e; 
+	background-color:#efefff;
+}
+.window.unselected{
+	border:2px solid #bbb;
+}
+
+.window .toolarea{
+	margin:0px;
+	position:absolute;
+	left:2px;
+	right:2px;
+	bottom:2px;
+	height: 16px;
+	text-align: right;
+}
+
+.window .toolarea img{
+	margin-left:3px;
+	border:1px solid #eee; 
+}
+
+.window .toolarea img:hover{
+	border:1px solid #aaa; 
+}
+.window:hover {
+
+	box-shadow: 2px 2px 19px #444;
+   -o-box-shadow: 2px 2px 19px #444;
+   -webkit-box-shadow: 2px 2px 19px #444;
+   -moz-box-shadow: 2px 2px 19px #444;
+    opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+
+#toolBar{
+	border:1px solid #ececec; 
+	opacity:0.6; 
+	filter:alpha(opacity=60); 
+	margin:0px;
+	padding:4px;
+	position:absolute;
+	top:6px;
+	left:6px;
+	width: 148px;
+	height: 32px;
+}
+
+#toolBar img{
+	border:1px solid #eee; 
+	width: 24px;
+	height: 24px;
+	margin:4px;
+	cursor:pointer;
+}
+
+#toolBar img:hover{
+	border:1px solid #aaa;
+}
+
+#toolBar:hover{
+	box-shadow: 1px 1px 6px #999;
+   -o-box-shadow: 1px 1px 6px #999;
+   -webkit-box-shadow: 1px 1px 6px #999;
+   -moz-box-shadow: 1px 1px 6px #999;
+    opacity:0.8;
+	filter:alpha(opacity=80);
+}
+

@@ -1,0 +1,100 @@
+.page_profile #profile_wrapper{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.page_profile td,
+.page_profile th{
+	vertical-align:middle;
+}
+
+.page_profile .steparea{
+	position: relative !important;
+	right:0px;
+	top:0px;
+	height: auto;
+	padding: 10px;
+}
+
+.page_profile .steparea h1{
+	font-size:16px;
+}
+
+.page_profile .steparea h2{
+	margin: 10px 0px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #505b6b;
+}
+
+
+/*Панель инструментов в шаге*/
+.page_profile .toolarea{
+	float: left;
+	width: 120px;
+}
+
+
+.page_profile .toolarea > .toolbutton{
+	margin-bottom: 20px;
+	padding:0px;
+	height: 90px;
+	width: 100px;
+	display:inline-block;
+	vertical-align:bottom;
+	text-align:center;
+	text-decoration: none;
+	color:#505b6b;
+	opacity:0.7;
+	cursor: pointer;
+	border-left:3px double #fff;
+	border-right:3px double #fff;
+}
+
+
+.page_profile .toolarea > .toolbutton:hover{
+	color:#222;
+	opacity:1;
+	border-left:3px double #eaeaea;
+	border-right:3px double #eaeaea;
+}
+
+.page_profile .toolarea > .toolbutton.active{
+	color:#222;
+	opacity:1;
+	border-left:3px double #ccc;
+	border-right:3px double #ccc;
+}
+
+
+.page_profile .toolarea > .toolbutton > div{
+	margin-top:70px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+
+
+.page_profile .toolarea > div.toolbutton.profile{
+	background:url(../images/buttons/profile.png) center top no-repeat;
+}
+
+
+.page_profile .toolarea > div.toolbutton.posts{
+	background:url(../images/buttons/org_chart.png) center top no-repeat;
+}
+
+.page_profile .toolarea > div.toolbutton.security{
+	background:url(../images/buttons/user_security.png) center top no-repeat;
+}
+
+.page_profile .toolarea > div.toolbutton.mail{
+	background:url(../images/buttons/mail.png) center top no-repeat;
+}
+
+
+/*Основная область*/
+.page_profile .centralarea{
+	margin-left:140px;
+
+}

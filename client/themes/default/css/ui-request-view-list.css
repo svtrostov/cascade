@@ -1,0 +1,24 @@
+.page_request_view_list #request_view_list_wrapper{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.page_request_view_list td,
+.page_request_view_list th{
+	vertical-align:middle;
+}
+
+
+/*Панель инструментов в шаге*/
+.page_request_view_list .toolarea{
+	float: left;
+	width: 200px;
+	margin:10px;
+}
+
+
+/*Основная область*/
+.page_request_view_list .centralarea{
+	margin-left:220px;
+
+}

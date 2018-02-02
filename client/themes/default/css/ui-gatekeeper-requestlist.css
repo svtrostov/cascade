@@ -1,0 +1,11 @@
+#requestlist_area{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#requestlist li{
+	display: block;
+	min-width: 600px;
+	text-align: left;
+	height: auto;
+}

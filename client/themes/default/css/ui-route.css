@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------------
+ * .workflow
+ --------------------------------------------------------------------*/
+.workflow{
+	position: absolute;
+	left:5px;
+	top:55px;
+	right:5px;
+	bottom:5px;
+	border:1px solid #cccccc; 
+	overflow: scroll;
+}
+
+
+.route > .unit{ 
+	border:1px solid #bbb; 
+	width:140px;
+	height:90px; 
+	z-index:20;
+	position:absolute; 
+	color:black;
+	padding-top:0.9em; 
+	font-size:12px;
+	text-align:center;
+	background-color:#eeeeef;
+   cursor:pointer;
+}
+
+.route > .connector{
+	position:absolute;
+	border:1px solid #cccccc;
+}
+
+
+.route > .connector_line{
+	position:absolute;
+	background: #aaa;
+}

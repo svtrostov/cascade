@@ -1,0 +1,74 @@
+.page_requests_list .filter_area{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 80px;
+	overflow: hidden;
+	border-bottom:1px solid #dadada;
+}
+
+
+.page_requests_list .filter_area > .filter_line{
+	display: block;
+	clear:both;
+	border-top: 1px solid #dadada;
+	padding: 3px;
+	overflow: hidden;
+	white-space:nowrap;
+}
+.page_requests_list .filter_area > .filter_line:first-child{
+	border-top: 0;
+}
+
+
+.page_requests_list .filter_line > div.left{
+	display:inline-block;
+	padding-left:5px;
+	border-left:3px double #dadada;
+}
+
+.page_requests_list .filter_line > div.left:first-child{
+	border-left:3px double #FFFFFF;
+	padding-left:0px;
+}
+
+.page_requests_list #filter_company_id{
+	width:220px;
+}
+.page_requests_list #filter_iresource_id{
+	width:220px;
+}
+
+.page_requests_list #filter_route_id{
+	width:220px;
+}
+
+.page_requests_list #filter_search_term{
+	width:220px;
+}
+
+.page_requests_list .filter_area .icon_filter{
+	background:url(../images/icons/icon_filter_24.png) left top no-repeat;
+}
+.page_requests_list .filter_area .icon_filter_clear{
+	background:url(../images/icons/icon_clear_24.png) left top no-repeat;
+}
+
+.page_requests_list #requests_area{
+	position: absolute;
+	top: 81px;
+	left: 0px;
+	right: 0px;
+	bottom:0px;
+	overflow: auto;
+}
+
+.page_requests_list #requests_table{
+	margin-top: 5px;
+}
+
+.page_requests_list #requests_table th,
+.page_requests_list #requests_table td{
+	vertical-align: middle;
+}

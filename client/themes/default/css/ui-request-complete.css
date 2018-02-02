@@ -1,0 +1,73 @@
+/*Основная область*/
+.page_request_complete #request_area{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+.page_request_complete td,
+.page_request_complete th{
+	vertical-align:middle;
+}
+
+
+.page_request_complete .navigationarea{
+	margin:0px 10px;
+}
+
+.page_request_complete .centralarea{
+	position:absolute !important;
+	top:40px;
+	left:5px;
+	right:5px;
+	bottom:5px;
+	overflow: hidden;
+}
+
+/*Область списка*/
+.page_request_complete .sleft_panel{
+	position: absolute;
+	left:5px;
+	top:0px;
+	bottom: 5px;
+	width: 430px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+
+
+.page_request_complete .sright_panel{
+	position: absolute;
+	left:445px;
+	top:0px;
+	bottom: 5px;
+	right: 5px;
+	border: 1px solid #ccc;
+	overflow: auto;
+	padding: 0px;
+}
+
+
+.page_request_complete .small_splitter{
+	position: absolute;
+	left:438px;
+	width: 4px;
+	top:0px;
+	bottom: 5px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #e3e3e3 url(../images/handle_h.gif) center center no-repeat;
+	cursor: col-resize;
+}
+
+
+.page_request_complete #performers_area_li,
+.page_request_complete #iroles_area_li{
+	margin:5px;
+}
+
+.page_request_complete .none_message{
+	margin-top:20px;
+	font-weight: bold;
+	text-align: center;
+}
